@@ -1,0 +1,79 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Nunito" href="https://fonts.googleapis.com/css?family=Nunito:100,400,700"></mj-font>
+    <mj-attributes>
+      <mj-all font-family="Nunito, Helvetica, Arial, sans-serif" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#f8f9fa">
+    <mj-section background-color="#05234c">
+      <mj-group width="65%">
+        <mj-column>
+          <mj-image align="right" width="200px" padding-top="0px" src="{{ asset('assets/xuri_mds_logo.png') }}" />
+        </mj-column>
+        <mj-column>
+          <mj-image align="right" width="100px" padding-top="0px" src="{{ asset('assets/xuri_maig_logo.png') }}" />
+        </mj-column>
+      </mj-group>
+      <mj-column width="35%">
+        <mj-text font-size="15px" padding-top="10px" color="#f8f9fa" align="right">
+          {{ Carbon\Carbon::now()->format('D, M d, Y') }}
+        </mj-text>
+      </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section background-color="white">
+      <mj-group background-color="white">
+        <mj-column>
+          <mj-image align="center" padding-top="0px" width="400px" src="{{ asset('assets/nb_cytiva_logo.png') }}" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section background-color="white">
+      <mj-group background-color="white">
+        <mj-column>
+          <mj-text font-size="36px" padding-top="1px" font-weight="600" color="#05234c" font-style="bold" align="center">Hi, {{ $customerName }}</mj-text>
+          <mj-image align="center" padding-bottom="10px" src="{{ asset('assets/Dotted_Line.png') }}" width="125px" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <mj-section background-color="#eef2fb">
+      <mj-column>
+        <mj-text font-size="16px" color="#05234c" align="center" line-height="20px"><strong>{{ $invitedBy }}</strong> has invited you to join the {{ $companyName }} organisational account at Xuri Media Designer System.</mj-text>
+        <mj-text font-size="16px" color="#05234c" align="center" line-height="20px">Tap the button below to head over to our custom media configurator to get started on your journey towards freeing your media together with your team</mj-text>
+        <mj-button href="{{ $getStartedUrl }}" background-color="#e7b448" color="white" font-size="16px" font-weight="600" border-radius="15px" width="200px" height="50px">
+          Get Started
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white">
+      <mj-group>
+        <mj-column>
+          <mj-text font-size="16px" color="#05234c" align="center" font-weight="600" line-height="20px">Not sure how custom media can help you ?</mj-text>
+          <mj-text font-size="16px" padding-top="0px" padding-bottom="1px" color="#05234c" font-style="bold" align="center">Checkout our on demand webinar Better Media, Better Outcomes | Nucleus Biologics.</mj-text>
+          <mj-divider border-width="2px" padding="30px" width="200px" border-color="#e9b620" />
+          <mj-text font-size="16px" color="#05234c" align="center" font-weight="600" line-height="20px">Need help getting started?</mj-text>
+          <mj-text font-size="16px" padding-top="0px" padding-bottom="1px" color="#05234c" font-style="bold" align="center">Simply reply to this email and our customer success team will be in touch with you.</mj-text>
+        </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#f1f1f1">
+      <mj-column>
+        <mj-social font-size="15px" icon-size="25px" mode="horizontal" border-radius="15px" padding-top="0px">
+          <mj-social-element name="instagram" href="https://www.instagram.com/cytiva/" background-color="#999999"></mj-social-element>
+          <mj-social-element name="twitter" href="https://twitter.com/cytiva" background-color="#999999"></mj-social-element>
+          <mj-social-element name="facebook" href="https://www.facebook.com/cytiva" background-color="#999999"></mj-social-element>
+          <mj-social-element name="linkedin" href="https://www.linkedin.com/company/cytiva/" background-color="#999999"></mj-social-element>
+        </mj-social>
+        <mj-text padding-top="10px" color="#6d6f72" align="center" font-size="10px" line-height="15px">
+          10929 Technology Pl, San Diego,<br>
+          CA 92127, United States.<br>
+          +1-858-251-2010<br>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

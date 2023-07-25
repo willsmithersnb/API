@@ -9,15 +9,25 @@ Please check the official laravel installation guide for server requirements bef
 
 Clone the repository
 
-    git clone git@bitbucket.org:atlas-labs/48-tdc-build-grant-website.git
+    git clone git@bitbucket.org:atlas-labs/39-nb-laravel-media-customizer.git
 
 Switch to the repo folder
 
-    cd 48-tdc-build-grant-website
+    cd 39-nb-laravel-media-customizer
 
 Install all the dependencies using composer
 
     composer install
+
+Install Libra Office
+
+##### Linux
+
+    sudo apt install libreoffice
+
+##### Mac
+
+    brew install libreoffice
 
 Copy the example env file and make the required configuration changes in the .env file
 
@@ -28,8 +38,9 @@ Generate a new application key
     php artisan key:generate
 
 Run the database migrations (**Set the database connection in .env before migrating**)
+(**This is not production friendly and will delete your existing data if you run it**)
 
-    php artisan migrate
+    php artisan migrate --seed
 
 Install NVM
 

@@ -1,0 +1,54 @@
+<mjml>
+<mj-head>
+    <mj-font name="Lato" href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" />
+</mj-head>
+  <mj-body background-color="white">
+    <mj-section background-url="{{ asset('assets/banner.png') }}" background-color="#05234C">
+        <mj-group width="100%">
+        <mj-column>
+            <mj-image align="left" width="240px" padding-top="0px" src="{{ asset('assets/NB_Lux_AIR_Logos.png') }}" />
+        </mj-column>
+        <mj-column>
+            <mj-text font-size="20px" padding-top="10px" color="#f8f9fa" align="right" >
+            <span>{{ Carbon\Carbon::now()->format('D, M d, Y') }}</span>
+            </mj-text>
+        </mj-column>
+        </mj-group>
+        <mj-group width="100%">
+        <mj-column>
+            <mj-text font-size="26px" padding-top="60px" color="#f8f9fa" font-style="bold" align="left" >Welcome to NB-AIR!</mj-text>
+        </mj-colmun>
+        </mj-group>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="14px" color="#05234C" align="justify">
+          Thank you for signing up, Here's your $5000 coupon code that you can <br>
+          redeem on your orders over $25,000 on Nb-Lux
+        </mj-text>
+        <mj-button font-size="20px" background-color="white" height="40px" width="300px" border-radius="15px"  border="5px solid #F0B323" color="#F0B323" padding="20px 0px 10px 22px" align="left">
+        Coupon Code: {{ config('app.coupon_code') }}
+        </mj-button>
+        <mj-text font-size="14px" color="#05234C" align="justify">
+        <span>
+          Please feel free to contact us at <b>orders@nucleusbiologics.com</b> if you have <br>
+          any questions or concerns!
+          </span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section  background-color="#E0E1E3">
+      <mj-column>
+      <mj-image height="9mpx" width="240px" src="{{ asset('assets/footer-icon.png') }}" alt="footer-logo" padding-top="0px" padding-left="5px"></mj-image>
+      </mj-column>
+      <mj-column>
+        <mj-text padding-top="5px" color="#6d6f72" align="right" font-size="12px">
+        <span>10929 Technology Pl, San Diego,<br>
+        CA 92127, United States.<br>
+        858-251-2010<br>
+        </span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

@@ -5,6 +5,7 @@
 /vendor
 .env
 .env.backup
+/.idea
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
@@ -13,3 +14,6 @@ yarn-error.log
 public/css/app.css
 public/js/app.js
 public/js/app.js.LICENSE.txt
+public/mix-manifest.json
+storage/config/google_credentials.json
+.DS_Store

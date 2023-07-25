@@ -1,3 +1,5 @@
 *
 !public/
 !.gitignore
+!spec_template.docx
+!spec_template_draft.docx

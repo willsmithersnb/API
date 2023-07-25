@@ -1,0 +1,76 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Nunito" href="https://fonts.googleapis.com/css?family=Nunito:100,400,700"></mj-font>
+    <mj-attributes>
+      <mj-all font-family="Nunito, Helvetica, Arial, sans-serif" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#f8f9fa">
+    <mj-section background-color="#05234c">
+      <mj-group width="100%">
+        <mj-column>
+          <mj-image align="left" width="300px" padding-top="0px" src="{{ asset('assets/NB_Lux_AIR_Logos.png') }}" />
+        </mj-column>
+        <mj-column>
+          <mj-text font-size="20px" padding-top="10px" color="#f8f9fa" align="right">
+            {{ Carbon\Carbon::now()->format('D, M d, Y') }}
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section background-color="white">
+      <mj-group background-color="white">
+        <mj-column>
+          <mj-image align="center" padding-top="0px" src="{{ asset('assets/email_header_logo_v2.png') }}" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section background-color="white">
+      <mj-group background-color="white">
+        <mj-column>
+          <mj-text font-size="36px" padding-top="1px" font-weight="600" color="#05234c" font-style="bold" align="center">New Xuri&trade; Media AI Guide Subscriber</mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section background-color="white">
+      <mj-group background-color="white" width="30%">
+        <mj-column>
+          <mj-image align="center" padding-top="1px" padding-bottom="1px" src="{{ asset('/assets/Dotted_Line.png') }}" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <mj-section background-color="#eef2fb">
+      <mj-group>
+        <mj-column>
+          <mj-raw>@if($has_coupon_code)</mj-raw>
+          <mj-text font-size="14px" color="#042457" align="center" line-height="22px">
+            A trial subscription has been created by {{ $fullName }} <br> the subscriber email address is <a href="mailto:{{ $email }}">{{ $email }}</a>.
+          </mj-text>
+          <mj-raw>@else</mj-raw>
+          <mj-text font-size="14px" color="#042457" align="center" line-height="22px">
+            A new subscription request has been made by {{ $fullName }} <br> Subscriber email address <a href="mailto:{{ $email }}">{{ $email }}</a>. <br> Please Verify.
+          </mj-text>
+          <mj-raw>@endif</mj-raw>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <mj-section background-color="#f1f1f1">
+      <mj-column>
+        <mj-social font-size="15px" icon-size="25px" mode="horizontal" border-radius="15px" padding-top="0px">
+          <mj-social-element name="instagram" href="https://www.instagram.com/nucleusbiologics/" background-color="#999999"></mj-social-element>
+          <mj-social-element name="twitter" href="https://twitter.com/nucleusbiologic" background-color="#999999"></mj-social-element>
+          <mj-social-element name="facebook" href="https://www.facebook.com/nucleusbiologics/" background-color="#999999"></mj-social-element>
+          <mj-social-element name="linkedin" href="https://www.linkedin.com/company/nucleus-biologics/" background-color="#999999"></mj-social-element>
+        </mj-social>
+        <mj-text padding-top="10px" color="#6d6f72" align="center" font-size="10px" line-height="15px">
+          10929 Technology Pl, San Diego,<br>
+          CA 92127, United States.<br>
+          +1-858-251-2010<br>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

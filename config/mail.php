@@ -47,6 +47,10 @@ return [
 
         'ses' => [
             'transport' => 'ses',
+            'key' => env('AWS_MAIL_ACCESS_KEY_ID'),
+            'secret' => env('AWS_MAIL_SECRET_ACCESS_KEY'),
+            'region' => env('AWS_MAIL_REGION'),
+            'version' => 'latest',
         ],
 
         'mailgun' => [

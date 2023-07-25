@@ -1,0 +1,92 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Nunito" href="https://fonts.googleapis.com/css?family=Nunito:100,400,700"></mj-font>
+    <mj-attributes>
+      <mj-all font-family="Nunito, Helvetica, Arial, sans-serif" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#f8f9fa">
+    <mj-section background-color="#05234c">
+      <mj-group width="65%">
+        <mj-column>
+          <mj-image align="right" width="200px" padding-top="0px" src="{{ asset('assets/xuri_mds_logo.png') }}" />
+        </mj-column>
+        <mj-column>
+          <mj-image align="right" width="100px" padding-top="0px" src="{{ asset('assets/xuri_maig_logo.png') }}" />
+        </mj-column>
+      </mj-group>
+      <mj-column width="35%">
+        <mj-text font-size="15px" padding-top="10px" color="#f8f9fa" align="right">
+          {{ Carbon\Carbon::now()->format('D, M d, Y') }}
+        </mj-text>
+      </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <mj-section background-color="white">
+      <mj-group background-color="white">
+        <mj-column>
+          <mj-image align="center" padding-top="0px" width="400px" src="{{ asset('assets/nb_cytiva_logo.png') }}" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <mj-section background-color="white">
+      <mj-group background-color="white">
+        <mj-column>
+          <mj-text font-size="36px" padding-top="1px" font-weight="600" color="#05234c" font-style="bold" align="center">Welcome to Xuri&trade; Media<br> AI Guide!</mj-text>
+          <mj-image align="center" padding-bottom="10px" src="{{ asset('assets/Dotted_Line.png') }}" width="125px" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <mj-section background-color="#eef2fb">
+      <mj-column>
+        <mj-text font-size="16px" color="#05234c" align="center" line-height="20px">Thank you for subscribing to Xuri&trade; Media AI Guide! To complete payment by purchase order, send a purchase order to Xuri via email at <a href="mailto:orders@nucleusbiologics.com">orders@nucleusbiologics.com</a>.</mj-text>
+        <mj-text font-size="16px" color="#05234c" align="center" line-height="20px">To pay by credit card, contact Nucleus Biologics at <a href="mailto:orders@nucleusbiologics.com">orders@nucleusbiologics.com</a>, and an associate will reach out to complete payment.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white">
+      <mj-group background-color="white">
+        <mj-column>
+          <mj-text font-size="24px" padding-top="15px" font-weight="600" color="#05234c" font-style="bold" align="center" line-height="5px">Pricing</mj-text>
+          <mj-divider width="60px" border-color="#f0b323" border-width="2px"></mj-divider>
+          <mj-text color="#05234c" font-size="14px" line-height="20px">
+            <ul>
+              <li>$5,000 per year General Membership – (with a $5,000 credit towards media purchases of $25,000 or more)</li>
+              <ul>
+                <li>$900 for each additional seat</li>
+              </ul>
+              <br>
+              <li>$950 per year Academic Membership</li>
+              <ul>
+                <li>$250 for each additional seat</li>
+              </ul>
+            </ul>
+          </mj-text>
+          <mj-text color="#05234c" align="center" font-size="14px" line-height="20px">
+            Questions? Email <a href="mailto:orders@nucleusbiologics.com"> orders@nucleusbiologics.com</a>, and an associate will be in touch shortly.
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <mj-section background-color="#f1f1f1">
+      <mj-column>
+        <mj-social font-size="15px" icon-size="25px" mode="horizontal" border-radius="15px" padding-top="0px">
+          <mj-social-element name="instagram" href="https://www.instagram.com/cytiva/" background-color="#999999"></mj-social-element>
+          <mj-social-element name="twitter" href="https://twitter.com/cytiva" background-color="#999999"></mj-social-element>
+          <mj-social-element name="facebook" href="https://www.facebook.com/cytiva" background-color="#999999"></mj-social-element>
+          <mj-social-element name="linkedin" href="https://www.linkedin.com/company/cytiva/" background-color="#999999"></mj-social-element>
+        </mj-social>
+        <mj-text padding-top="10px" color="#6d6f72" align="center" font-size="10px" line-height="15px">
+          10929 Technology Pl, San Diego,<br>
+          CA 92127, United States.<br>
+          +1-858-251-2010<br>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

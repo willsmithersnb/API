@@ -1,0 +1,212 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Nunito" href="https://fonts.googleapis.com/css?family=Nunito:100,400,700"></mj-font>
+    <mj-attributes>
+      <mj-all font-family="Nunito, Helvetica, Arial, sans-serif" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#f8f9fa">
+    <mj-section background-color="#05234c">
+      <mj-group width="100%">
+        <mj-column>
+          <mj-image align="left" width="300px" padding-top="0px" src="{{ asset('assets/NB_Lux_AIR_Logos.png') }}" />
+        </mj-column>
+        <mj-column>
+          <mj-text font-size="20px" padding-top="10px" color="#f8f9fa" align="right">
+            {{ Carbon\Carbon::now()->format('D, M d, Y') }}
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section background-color="white">
+      <mj-group background-color="white">
+        <mj-column>
+          <mj-image align="center" padding-top="0px" src="{{ asset('assets/email_header_logo_v2.png') }}" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section background-color="white">
+      <mj-group background-color="white">
+        <mj-column>
+          <mj-text font-size="36px" padding-top="1px" font-weight="600" color="#05234c" font-style="bold" align="center">New Order</mj-text>
+          <mj-text font-size="16px" padding-top="1px" font-weight="100" color="#05234c" font-style="bold" align="center">by {{ $customerName }}</mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section background-color="white">
+      <mj-group background-color="white" width="30%">
+        <mj-column>
+          <mj-image align="center" padding-top="1px" padding-bottom="1px" src="{{ asset('/assets/Dotted_Line.png') }}" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="16px" color="#05234c" font-style="bold" align="center" padding="10px 0px 0px 0px">
+          Total:<br><strong>{{ $total }}</strong></mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="16px" color="#05234c" font-style="bold" align="center" padding="10px 0px 0px 0px">
+          Formulation:<br><strong>{{ $formulationName }}</strong></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0px">
+      <mj-column>
+        <mj-text font-size="16px" color="#05234c" font-style="bold" align="center" padding="0px 0px 20px 0px">
+          Reference Number<br><strong>{{ $referenceNumber }}</strong></mj-text>
+      </mj-column>
+
+      <mj-column>
+        <mj-text font-size="16px" color="#05234c" font-style="bold" align="center" padding="0px 0px 20px 0px">
+          Company Name<br><strong>{{ $companyName }}</strong></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white">
+      <mj-column>
+        <mj-text font-size="25px" font-weight="600" color="#05234c" align="center">Order Details</mj-text>
+        <mj-divider border-width="2px" width="80px" border-color="#e9b620" padding-top="0px" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white">
+      <mj-column>
+        <mj-text font-size="16px" padding-bottom="0px" padding-top="0px" font-weight="600" color="#05234c">
+          Formulation:
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="16px" padding-bottom="0px" padding-top="0px" color="#05234c">
+          {{ $formulationName }}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white">
+      <mj-column>
+        <mj-text font-size="16px" padding-bottom="0px" padding-top="0px" font-weight="600" color="#05234c">
+          Format:
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="16px" padding-bottom="0px" padding-top="0px" color="#05234c">
+          {{ $format }}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white">
+      <mj-column>
+        <mj-text font-size="16px" padding-bottom="0px" padding-top="0px" font-weight="600" color="#05234c">
+          Formulation Weight:
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="16px" padding-bottom="0px" padding-top="0px" color="#05234c">
+          {{ $formulationWeight }}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white">
+      <mj-column>
+        <mj-text font-size="16px" padding-bottom="0px" padding-top="0px" font-weight="600" color="#05234c">
+          Predicted Osmolality:
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="16px" padding-bottom="0px" padding-top="0px" color="#05234c">
+          {{ $predictedOsmolality }}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white">
+      <mj-column>
+        <mj-text font-size="16px" padding-bottom="0px" padding-top="0px" font-weight="600" color="#05234c">
+          cGMP:
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="16px" padding-bottom="0px" padding-top="0px" color="#05234c">
+          {{ $cgmp }}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white">
+      <mj-column>
+        <mj-text font-size="16px" padding-bottom="0px" padding-top="0px" font-weight="600" color="#05234c">
+          Total Number of Liters/Kilograms:
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="16px" padding-bottom="0px" padding-top="0px" color="#05234c">
+          {{ $totalLiters }}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white">
+      <mj-column>
+        <mj-text font-size="16px" padding-bottom="0px" padding-top="0px" font-weight="600" color="#05234c">
+          Total Price
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="16px" padding-bottom="0px" padding-top="0px" color="#05234c">
+          {{ $total }}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white">
+      <mj-column>
+        <mj-text font-size="16px" padding-bottom="0px" padding-top="0px" font-weight="600" color="#05234c">
+          Estimated Lead Time
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="16px" padding-bottom="0px" padding-top="0px" color="#05234c">
+          {{ $leadTime }}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white">
+      <mj-column>
+        <mj-text font-size="20px" font-weight="600" color="#05234c" align="center" container-background-color="#eef2fb" padding="15px">Notes</mj-text>
+        <mj-text font-size="16px" padding-bottom="20px" color="#05234c" align="left">{{ $notes ? $notes : 'No Notes' }}</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white">
+      <mj-group width="100%">
+        <mj-column background-color="white">
+          <mj-text font-size="14px" color="#05234c" align="center">
+            To view all details associated with this order, <a color="#05234c" href="{{ $orderLink }}">Click here</a>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <mj-section background-color="#f1f1f1">
+      <mj-column>
+        <mj-social font-size="15px" icon-size="25px" mode="horizontal" border-radius="15px" padding-top="0px">
+          <mj-social-element name="instagram" href="https://www.instagram.com/nucleusbiologics/" background-color="#999999"></mj-social-element>
+          <mj-social-element name="twitter" href="https://twitter.com/nucleusbiologic" background-color="#999999"></mj-social-element>
+          <mj-social-element name="facebook" href="https://www.facebook.com/nucleusbiologics/" background-color="#999999"></mj-social-element>
+          <mj-social-element name="linkedin" href="https://www.linkedin.com/company/nucleus-biologics/" background-color="#999999"></mj-social-element>
+        </mj-social>
+        <mj-text padding-top="10px" color="#6d6f72" align="center" font-size="10px" line-height="15px">
+          10929 Technology Pl, San Diego,<br>
+          CA 92127, United States.<br>
+          +1-858-251-2010<br>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

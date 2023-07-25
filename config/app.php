@@ -54,7 +54,18 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+    'admin_url' => env('NB_ADMIN_URL', 'https://admin-dev.nb-lux.com'),
+
+    'lux_url' => env('NB_LUX_URL', 'https://configurator-dev.nb-lux.com'),
+
     'asset_url' => env('ASSET_URL', null),
+
+    'presigned_url_expiry_time' => env('SIGNED_URL_EXPIRY_TIME', 30),
+
+    'admin_portal_origin' => env('ADMIN_PORTAL_ORIGIN'),
+
+    'stoic_url' => env('STOIC_URL', 'https://api.stoic.atlaslabs.dev'),
+
 
     /*
     |--------------------------------------------------------------------------
@@ -161,10 +172,15 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Maatwebsite\Excel\ExcelServiceProvider::class,
 
         /*
          * Package Service Providers...
          */
+        Spatie\Permission\PermissionServiceProvider::class,
+        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
+        EloquentFilter\ServiceProvider::class,
+        Crazybooot\Base64Validation\Providers\ServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -174,6 +190,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\DingoSerializerProvider::class,
+
 
     ],
 
@@ -226,7 +244,17 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+        'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
+        'UnitHelper' => App\Helper\UnitHelper::class,
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class
     ],
 
+    'admin_emails' => explode(', ', env('ADMIN_EMAILS', 'developer@atlaslabs.com.au')),
+    'coupon_code' => env('COUPON_CODE', ''),
+    'libre_office' => env('LIBRE_OFFICE_PATH'),
+    'tenant' => env('TENANT', 'nblux'),
+    'temp_url_ttl' => env('TEMP_URL_TTL', 1),
+    'put_request_urls' => explode(',', env('PUT_REQUEST_URL', '')),
+    'received_key' => env('RECEIVED_KEY', 'CHANGEBEFOREUSE')
 ];
